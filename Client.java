@@ -50,6 +50,9 @@ public class Client {
             }else if (args[0].equals("-s")) {
                 port = 27996;
                 sslFlag = true;
+            }else{
+                System.out.println("Please enter correct command line\n./client <-p port> <-s> [hostname] [NEU ID]");
+                System.exit(0);
             }
         }
         String server = args[args.length - 2];
@@ -87,7 +90,11 @@ public class Client {
             message = in.readLine();
         }
         if (message.contains("BYE")){
-            System.out.println(message);
+            if(message.contains("Unknown_Husky_ID")){
+                System.out.println("Wrong NUID");
+            }else{
+                System.out.println(message);
+            }
             try
             {
                 in.close();
