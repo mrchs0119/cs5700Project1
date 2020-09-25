@@ -17,8 +17,8 @@ test case:
 2. ./client -p 27995 cs5700fa20.ccs.neu.edu 001401945
 3. ./client -s cs5700fa20.ccs.neu.edu 001401945
 4. ./client -p 27996 -s cs5700fa20.ccs.neu.edu 001401945
-5.Wrong hostname:   ./client cs5700fa20.ccs.neu 001401945
-6.Wrong NUID:       ./client cs5700fa20.ccs.neu.edu 00
+5. Wrong hostname:   ./client cs5700fa20.ccs.neu 001401945
+6. Wrong NUID:       ./client cs5700fa20.ccs.neu.edu 00
 
 
 
